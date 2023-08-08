@@ -1,0 +1,20 @@
+{
+    "name": "alin/emag-hero",
+    "description": "The eMag Hero test app",
+    "type": "project",
+    "require": {
+        "php": "^8.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alin\\EmagHero\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alin Migea",
+            "email": "alinmigea@gmail.com"
+        }
+    ]
+}
