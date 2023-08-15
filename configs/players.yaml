@@ -1,0 +1,57 @@
+players:
+  Hero:
+    type: !php/enum AlinMigea\EmagHero\Enums\PlayerTypeEnum::Hero
+    stats:
+      Health:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Health
+        min: 70
+        max: 100
+      Strength:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Strength
+        min: 70
+        max: 80
+      Defence:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Defence
+        min: 45
+        max: 55
+      Speed:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Speed
+        min: 40
+        max: 50
+      Luck:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Luck
+        min: 10
+        max: 30
+    skills:
+      DoubleAttack:
+        name: !php/enum AlinMigea\EmagHero\Enums\SkillEnum::DoubleAttack
+        minLuck: 0
+        maxLuck: 10
+      LuckyDefence:
+        name: !php/enum AlinMigea\EmagHero\Enums\SkillEnum::LuckyDefence
+        minLuck: 0
+        maxLuck: 20
+  Beast:
+    type: !php/enum AlinMigea\EmagHero\Enums\PlayerTypeEnum::Beast
+    stats:
+      Health:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Health
+        min: 60
+        max: 90
+      Strength:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Strength
+        min: 60
+        max: 90
+      Defence:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Defence
+        min: 40
+        max: 60
+      Speed:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Speed
+        min: 40
+        max: 60
+      Luck:
+        name: !php/enum AlinMigea\EmagHero\Enums\StatEnum::Luck
+        min: 25
+        max: 40
+    skills:

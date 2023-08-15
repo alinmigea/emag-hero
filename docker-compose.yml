@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    emag-hero:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        command: [ "php-fpm", "-F", "-R", "-dxdebug.mode=develop,debug" ]
+        volumes:
+            - ".:/var/www/emag-hero:cached"
+            - "~/.composer:/var/composer:cached"
