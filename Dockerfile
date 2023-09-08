@@ -18,5 +18,3 @@ COPY . .
 RUN chown -R root:root vendor/bin/*
 
 USER www-data
-
-

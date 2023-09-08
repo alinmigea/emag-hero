@@ -2,12 +2,12 @@
 SHELL = /bin/sh
 
 .PHONY: build
-build: ## Build the image
-	@docker-compose up -d --build --force-recreate emag-hero
+install: ## Build the image
+	@docker compose up -d --build --force-recreate emag-hero
 
 .PHONY: ssh
 ssh: ## SSH into image container
-	@docker-compose exec emag-hero ash
+	@docker compose exec emag-hero ash
 
 .PHONY: unit-tests
 unit-tests: ## Run unit tests
